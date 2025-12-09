@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STeoretik - Ссылки</title>
+    <!-- Подключение иконок (FontAwesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Подключение шрифта (Google Fonts) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Основные стили страницы */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* Темный фон */
+            background-image: linear-gradient(135deg, #1e1e2f 0%, #121212 100%);
+            font-family: 'Montserrat', sans-serif;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        /* Контейнер для контента */
+        .container {
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+            padding: 20px;
+        }
+
+        /* Аватарка / Логотип профиля */
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: #333;
+            margin: 0 auto 20px;
+            border: 3px solid #ffffff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            /* Замени ссылку ниже на свою аватарку */
+            background-image: url('https://ui-avatars.com/api/?name=ST&background=random&color=fff&size=256'); 
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Имя пользователя */
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        p.description {
+            color: #aaa;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        /* Стили кнопок */
+        .link-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 15px 0;
+            margin-bottom: 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            position: relative;
+            font-size: 16px;
+        }
+
+        .link-btn i {
+            font-size: 24px;
+            position: absolute;
+            left: 20px;
+        }
+
+        .link-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        /* Цвета брендов */
+        .telegram {
+            background-color: #229ED9; /* Telegram Blue */
+        }
+        
+        .tiktok {
+            background-color: #000000; /* TikTok Black */
+            border: 1px solid #333;
+        }
+
+        .youtube {
+            background-color: #FF0000; /* YouTube Red */
+        }
+
+        /* Футер (почта) */
+        .footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #888;
+        }
+
+        .footer a {
+            color: #888;
+            text-decoration: none;
+            border-bottom: 1px dotted #888;
+            transition: color 0.3s;
+        }
+
+        .footer a:hover {
+            color: #fff;
+            border-bottom: 1px solid #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Аватарка -->
+        <div class="avatar"></div>
+        
+        <!-- Никнейм -->
+        <h1>STeoretik</h1>
+        <p class="description">Мои социальные сети</p>
+
+        <!-- Кнопки -->
+        <a href="https://t.me/steoretiknepishet" target="_blank" class="link-btn telegram">
+            <i class="fa-brands fa-telegram"></i> Telegram Канал
+        </a>
+
+        <a href="https://tiktok.com/@stteoretikyt" target="_blank" class="link-btn tiktok">
+            <i class="fa-brands fa-tiktok"></i> TikTok
+        </a>
+
+        <a href="https://www.youtube.com/@STTeoretik" target="_blank" class="link-btn youtube">
+            <i class="fa-brands fa-youtube"></i> YouTube
+        </a>
+
+        <!-- Почта -->
+        <div class="footer">
+            По вопросам сотрудничества:<br>
+            <a href="mailto:steoretikoffer@gmail.com">steoretikoffer@gmail.com</a>
+        </div>
+    </div>
+
+</body>
+</html>
